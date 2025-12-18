@@ -1,0 +1,140 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+    --primary: #10b981; /* Emerald 500 */
+    --primary-dark: #059669; /* Emerald 600 */
+    --secondary: #3b82f6; /* Blue 500 */
+    --accent: #f59e0b; /* Amber 500 */
+    --background: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --glass: rgba(255, 255, 255, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- Efek Navbar Modern --- */
+.navbar-glass {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    transition: all 0.3s ease;
+}
+
+/* --- Hero Section Animation --- */
+.hero-gradient {
+    background: radial-gradient(circle at top right, #dcfce7, transparent),
+                radial-gradient(circle at bottom left, #f0fdf4, transparent);
+}
+
+.floating-animation {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* --- Tombol Interaktif --- */
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.4);
+}
+
+/* --- Card Fitur AI --- */
+.card-ai {
+    background: var(--white);
+    border: 1px solid #f1f5f9;
+    border-radius: 24px;
+    padding: 2rem;
+    transition: all 0.4s ease;
+}
+
+.card-ai:hover {
+    border-color: var(--primary);
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    background: #f0fdf4;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.card-ai:hover .icon-box {
+    background: var(--primary);
+    color: var(--white);
+    transform: rotate(-5deg) scale(1.1);
+}
+
+/* --- Scanner Effect (Untuk Fitur AI) --- */
+.scanner-line {
+    width: 100%;
+    height: 4px;
+    background: var(--primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 15px var(--primary);
+    animation: scan 2s linear infinite;
+    z-index: 10;
+}
+
+@keyframes scan {
+    0% { top: 0%; }
+    100% { top: 100%; }
+}
+
+/* --- Footer Styling --- */
+footer {
+    background: #0f172a;
+    padding: 4rem 2rem 2rem;
+    color: #94a3b8;
+}
+
+footer h4 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+footer a:hover {
+    color: var(--primary);
+}
