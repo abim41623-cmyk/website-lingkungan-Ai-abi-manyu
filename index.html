@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVision AI | Klasifikasi Lingkungan & Edukasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .hero-pattern { background-color: #ecfdf5; background-image: url("https://www.transparenttextures.com/patterns/leaf.png"); }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-gray-800">
+
+    <nav class="sticky top-0 z-50 glass border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-leaf text-emerald-600 text-2xl"></i>
+                    <span class="text-xl font-bold tracking-tight text-emerald-800">EcoVision<span class="text-emerald-500">AI</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                    <a href="#" class="hover:text-emerald-600 transition">Beranda</a>
+                    <a href="#ai-tools" class="hover:text-emerald-600 transition">AI Deteksi</a>
+                    <a href="#edukasi" class="hover:text-emerald-600 transition">Edukasi</a>
+                    <a href="#komunitas" class="hover:text-emerald-600 transition">Komunitas</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="login.html" class="text-gray-600 font-medium hover:text-emerald-600">Masuk</a>
+                    <a href="logout.html" class="bg-emerald-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-emerald-700 transition shadow-md">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-pattern py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-emerald-900 mb-6">
+                Masa Depan Bumi di <br><span class="text-emerald-600 underline">Ujung Jari Anda</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                Gunakan teknologi AI tercanggih untuk mengklasifikasi sampah secara instan dan pelajari cara menjaga ekosistem kita dengan edukasi sosial yang interaktif.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition transform shadow-lg">
+                    <i class="fa-solid fa-camera mr-2"></i> Mulai Deteksi AI
+                </button>
+                <button class="bg-white text-emerald-700 border-2 border-emerald-100 px-8 py-4 rounded-xl font-bold text-lg hover:bg-emerald-50 transition shadow-sm">
+                    Pelajari Modul Edukasi
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto -mt-10 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 flex items-center gap-4">
+                <div class="p-3 bg-emerald-100 rounded-lg text-emerald-600"><i class="fa-solid fa-recycle text-2xl"></i></div>
+                <div><h3 class="font-bold text-xl">1.2jt+</h3><p class="text-sm text-gray-500">Sampah Terpilah</p></div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 flex items-center gap-4">
+                <div class="p-3 bg-blue-100 rounded-lg text-blue-600"><i class="fa-solid fa-users text-2xl"></i></div>
+                <div><h3 class="font-bold text-xl">50rb+</h3><p class="text-sm text-gray-500">Relawan Aktif</p></div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 flex items-center gap-4">
+                <div class="p-3 bg-orange-100 rounded-lg text-orange-600"><i class="fa-solid fa-seedling text-2xl"></i></div>
+                <div><h3 class="font-bold text-xl">100jt</h3><p class="text-sm text-gray-500">Pohon Tertanam</p></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="ai-tools" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <span class="text-emerald-600 font-bold tracking-widest uppercase text-sm">Fitur Unggulan</span>
+            <h2 class="text-3xl font-bold mt-2">Teknologi Untuk Lingkungan</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-magnifying-glass-chart text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Klasifikasi Sampah</h3>
+                <p class="text-gray-500 leading-relaxed">Pindai foto sampah Anda dan AI kami akan menentukan apakah itu plastik, kertas, atau organik dalam sekejap.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-wind text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Analisis Udara</h3>
+                <p class="text-gray-500 leading-relaxed">Cek kualitas udara di sekitar Anda secara real-time dengan integrasi data satelit terbaru.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-book-open text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Pusat Edukasi</h3>
+                <p class="text-gray-500 leading-relaxed">Akses ratusan modul pembelajaran sosial tentang cara hidup berkelanjutan dan ramah lingkungan.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-leaf text-emerald-400 text-2xl"></i>
+                    <span class="text-xl font-bold">EcoVision AI</span>
+                </div>
+                <p class="text-gray-400 max-w-sm">Berkomitmen menggunakan teknologi untuk melestarikan lingkungan demi generasi masa depan Indonesia.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Tautan</h4>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-emerald-400">Tentang Kami</a></li>
+                    <li><a href="#" class="hover:text-emerald-400">Kebijakan Privasi</a></li>
+                    <li><a href="#" class="hover:text-emerald-400">Kontak</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Ikuti Kami</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="text-2xl hover:text-emerald-400"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-emerald-400"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-2xl hover:text-emerald-400"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+            &copy; 2025 EcoVision AI. Dibuat dengan cinta untuk Bumi.
+        </div>
+    </footer>
+
+</body>
+</html>
